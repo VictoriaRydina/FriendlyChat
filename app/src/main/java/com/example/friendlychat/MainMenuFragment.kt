@@ -1,6 +1,22 @@
 package com.example.friendlychat
 
-import androidx.fragment.app.Fragment
+import com.example.friendlychat.databinding.FragmentMainMenuBinding
+import com.example.friendlychat.utils.showToast
 
-class MainMenuFragment: Fragment(R.layout.fragment_main_menu) {
+class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
+    R.layout.fragment_main_menu,
+    FragmentMainMenuBinding::inflate
+) {
+
+    override fun setUi() {
+        super.setUi()
+        with(binding){
+            mainMenuSignIn.setOnClickListener {
+                showToast(R.string.navigate_to_sign_in)
+            }
+            mainMenuSignUp.setOnClickListener {
+                showToast("Navigate to SignUp")
+            }
+        }
+    }
 }
