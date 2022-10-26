@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_menu_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_group_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_menu_sign_in"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginHorizontal="@dimen/dimens_24_dp"
+        android:layout_marginTop="@dimen/dimens_16_dp"
+        android:background="@drawable/button_state_background"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu_image" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_menu_sign_up"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/dimens_16_dp"
+        android:background="@drawable/button_state_background"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/main_menu_sign_in"
+        app:layout_constraintStart_toStartOf="@+id/main_menu_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu_sign_in" />
+</androidx.constraintlayout.widget.ConstraintLayout>
