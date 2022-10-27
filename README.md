@@ -14,7 +14,7 @@ work, study and in general for the convenience of communication with people.
 ## Initial project setup
 
 To start the project, you need to copy the project link
-https://github.com/VictoriaRydina/Messenger.git and open a new project in Android Studio using it
+https://github.com/VictoriaRydina/FriendlyChat.git and open a new project in Android Studio using it
 
 ## Open the project in Android Studio
 
