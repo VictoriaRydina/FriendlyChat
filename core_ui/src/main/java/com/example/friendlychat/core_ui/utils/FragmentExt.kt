@@ -1,4 +1,4 @@
-package com.example.friendlychat.utils
+package com.example.friendlychat.core_ui.utils
 
 import android.widget.Toast
 import androidx.annotation.StringRes

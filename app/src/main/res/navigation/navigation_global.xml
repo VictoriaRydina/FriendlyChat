@@ -8,6 +8,6 @@
     app:startDestination="@id/mainMenuFragment">
     <fragment
         android:id="@+id/mainMenuFragment"
-        android:name="com.example.friendlychat.MainMenuFragment"
+        android:name="com.example.friendlychat.main_menu.MainMenuFragment"
         android:label="MainMenuFragment" />
 </navigation>

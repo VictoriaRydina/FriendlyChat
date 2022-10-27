@@ -1,7 +1,3 @@
 <resources>
     <string name="app_name">Friendly Chat</string>
-    <string name="message">Сообщение</string>
-    <string name="sign_in">Войти</string>
-    <string name="sign_up">Зарегистрироваться</string>
-    <string name="navigate_to_sign_in" translatable="false">Navigate to SignIn</string>
 </resources>

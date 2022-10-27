@@ -1,4 +1,4 @@
-package com.example.friendlychat.navigation
+package com.example.friendlychat.core_ui.navigation
 
 import androidx.annotation.StringRes
 

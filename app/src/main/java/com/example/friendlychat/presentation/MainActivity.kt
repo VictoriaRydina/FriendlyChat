@@ -1,10 +1,11 @@
-package com.example.friendlychat
+package com.example.friendlychat.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.NavInflater
 import androidx.navigation.fragment.NavHostFragment
+import com.example.friendlychat.R
 import com.example.friendlychat.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.friendlychat
+package com.example.friendlychat.core_ui.presentation.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,7 +12,8 @@ import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import androidx.navigation.fragment.findNavController
 import androidx.viewbinding.ViewBinding
-import com.example.friendlychat.navigation.InternalDeepLink
+import com.example.friendlychat.core_ui.R
+import com.example.friendlychat.core_ui.navigation.InternalDeepLink
 
 abstract class BaseFragment<VB : ViewBinding>(
     @LayoutRes private val layoutRes: Int,

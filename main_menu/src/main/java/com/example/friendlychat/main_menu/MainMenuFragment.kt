@@ -1,7 +1,8 @@
-package com.example.friendlychat
+package com.example.friendlychat.main_menu
 
-import com.example.friendlychat.databinding.FragmentMainMenuBinding
-import com.example.friendlychat.utils.showToast
+import com.example.friendlychat.core_ui.presentation.fragment.BaseFragment
+import com.example.friendlychat.core_ui.utils.showToast
+import com.example.friendlychat.main_menu.databinding.FragmentMainMenuBinding
 
 class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
     R.layout.fragment_main_menu,
