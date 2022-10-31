@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/about_app_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/about_app_button_back"
+        android:layout_width="@dimen/round_button_size"
+        android:layout_height="@dimen/round_button_size"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:background="@drawable/ic_arrow_back"
+        app:layout_constraintBottom_toBottomOf="@+id/about_app_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/about_app_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/about_app_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/feedback_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimens_56_dp"
+        android:layout_marginHorizontal="@dimen/dimens_16_dp"
+        android:layout_marginTop="@dimen/dimens_48_dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center_vertical"
+        android:text="@string/feedback"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_app_image" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/privacy_policy_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimens_56_dp"
+        android:layout_marginHorizontal="@dimen/dimens_16_dp"
+        android:layout_marginTop="@dimen/dimens_16_dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center_vertical"
+        android:text="@string/privacy_policy"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/terms_of_use_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dimens_56_dp"
+        android:layout_marginHorizontal="@dimen/dimens_16_dp"
+        android:layout_marginTop="@dimen/dimens_16_dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center_vertical"
+        android:text="@string/terms_of_use"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/privacy_policy_button" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/about_app_image"
+        android:layout_width="@dimen/image_about_app_width"
+        android:layout_height="@dimen/image_about_app_height"
+        android:layout_marginTop="@dimen/dimens_16_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_app_toolbar"
+        app:srcCompat="@drawable/ic_icon_friendly_chat" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/about_app_version_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_8_dp"
+        android:text="@string/version_app"
+        android:textColor="@color/black"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintEnd_toEndOf="@+id/about_app_image"
+        app:layout_constraintStart_toStartOf="@+id/about_app_image"
+        app:layout_constraintTop_toBottomOf="@+id/about_app_image" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/terms_of_use_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:layout_marginTop="@dimen/dimens_32_dp"
+        android:layout_marginEnd="@dimen/dimens_16_dp"
+        android:gravity="center"
+        android:lines="2"
+        android:text="@string/terms_of_use"
+        android:textColor="@color/black"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/dimens_16_dp"
+        android:layout_marginTop="@dimen/dimens_16_dp"
+        android:layout_marginBottom="@dimen/dimens_24_dp"
+        app:layout_constraintBottom_toTopOf="@+id/terms_of_use_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/terms_of_use_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/terms_of_use_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="@dimen/dimens_8_dp"
+                android:text="@string/kafka" />
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/terms_of_use_button"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:layout_marginEnd="@dimen/dimens_16_dp"
+        android:layout_marginBottom="@dimen/dimens_24_dp"
+        android:text="@string/come_back"
+        android:textColor="@color/white"
+        android:background="@drawable/button_state_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

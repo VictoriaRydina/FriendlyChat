@@ -1,5 +1,6 @@
 package com.example.friendlychat.core_ui.presentation.fragment
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,6 +23,11 @@ abstract class BaseFragment<VB : ViewBinding>(
 
     private var _binding: VB? = null
     val binding get() = requireNotNull(_binding)
+
+    override fun onAttach(context: Context) {
+        initComponent()
+        super.onAttach(context)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -72,4 +78,9 @@ abstract class BaseFragment<VB : ViewBinding>(
         super.onDestroy()
         _binding = null
     }
+
+    /**
+     * Init dagger component here
+     * */
+    abstract fun initComponent()
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feedback">Обратная связь</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="terms_of_use">Пользовательское соглашение</string>
+    <string name="version_app">Версия 1.0</string>
+    <string name="enter_your_email">Введите Ваш e-mail</string>
+    <string name="e_mail" translatable="false">E-mail</string>
+    <string name="describe_the_problem">Опишите проблему</string>
+    <string name="send">Отправить</string>
+    <string name="invalid_email">Неверный e-mail</string>
+    <string name="invalid_message">Неверное сообщение</string>
+    <string name="failed_to_create_message">Не удалось создать сообщение</string>
+    <string name="email_for_feedback">E-mail для обратной связи</string>
+    <string name="er_choose_an_app_to_email">"Выберите приложение для отправки e-mail"</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        Nulla consequat massa quis enim. \n\nDonec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+        mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. \n\nAenean vulputate
+        eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem
+        ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+        Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies
+        nisi. Nam eget dui. Etiam rhoncus. \n\nMaecenas tempus, tellus eget condimentum rhoncus, sem quam semper
+        libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+        hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero
+        venenatis faucibus. Nullam quis ante. \n\nEtiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+        Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+        sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.
+        Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. \n\nNullam accumsan lorem in dui.
+        Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis
+        et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices
+        mauris. \n\nInteger ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing.
+        Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero.
+        Cras id dui. Aenean ut eros et nisl sagittis vestibulum. Nullam nulla eros, ultricies sit amet,
+        nonummy id, imperdiet feugiat, pede. Sed lectus. \n\nDonec mollis hendrerit risus. Phasellus nec sem in
+        justo pellentesque facilisis. Etiam imperdiet imperdiet orci. Nunc nec neque. Phasellus leo dolor,
+        tempus non, auctor et, hendrerit quis, nisi. Curabitur ligula sapien, tincidunt non, euismod vitae,
+        posuere imperdiet, leo. Maecenas malesuada. Praesent congue erat at massa. Sed cursus turpis vitae
+        tortor. Donec posuere vulputate arcu. Phasellus accumsan cursus velit. Vestibulum ante ipsum primis
+        in faucibus orci luctus et ultrices posuere cubilia Curae.</string>
+    <string name="come_back">Вернуться назад</string>
+    <string name="kafka" translatable="false">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+        обнаружил, что он у себя в постели превратился в страшное насекомое. \n\nЛежа на панцирнотвердой спине,
+        он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками
+        живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло. Его многочисленные,
+        убого тонкие по сравнению с остальным телом ножки беспомощно копошились у него перед глазами.
+        \n\n«Что со мной случилось? » – подумал он. Это не было сном. Его комната, настоящая, разве что слишком
+        маленькая, но обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах. \n\nНад столом, где
+        были разложены распакованные образцы сукон – Замза был коммивояжером, – висел портрет, который он недавно
+        вырезал из иллюстрированного журнала и вставил в красивую золоченую рамку. На портрете была изображена
+        дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в
+        которой целиком исчезала ее рука. \n\nЗатем взгляд Грегора устремился в окно, и пасмурная погода – слышно
+        было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение.
+        «Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно
+        неосуществимо, он привык спать на правом боку, а в теперешнем своем состоянии он никак не мог
+        принять этого положения. \n\nС какой бы силой ни поворачивался он на правый бок, он неизменно
+        сваливался опять на спину. Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую
+        сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую
+        и слабую боль в боку. «Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! \n\nИзо дня
+        в день в разъездах. Деловых волнений куда больше, чем на месте, в торговом доме, а кроме того, изволь
+        терпеть тяготы дороги, думай о расписании поездов, мирись с плохим, нерегулярным питанием, завязывай
+        со все новыми и новыми людьми недолгие, никогда не бывающие сердечными отношения. Черт бы побрал все это!»
+        \n\nОн почувствовал вверху живота легкий зуд; медленно подвинулся на спине к прутьям кровати,
+        чтобы удобнее было поднять голову; нашел зудевшее место, сплошь покрытое, как оказалось, белыми
+        непонятными точечками; хотел было ощупать это место одной из ножек, но сразу отдернул ее, ибо даже
+        простое прикосновение вызвало у него, Грегора, озноб. Он соскользнул в прежнее свое положение.
+        «От этого раннего вставания, – подумал он, – можно совсем обезуметь. Человек должен высыпаться.
+        Другие коммивояжеры живут, как одалиски. Когда я, например, среди дня возвращаюсь в гостиницу,</string>
+</resources>

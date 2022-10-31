@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_about_app"
+    app:startDestination="@id/aboutAppFragment">
+
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.example.friendlychat.about_app.fragments.AboutAppFragment"
+        android:label="AboutAppFragment"
+        tools:layout="@layout/fragment_about_app">
+        <deepLink app:uri="@string/info_about_app_deepLink" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_feedbackFragment"
+            app:destination="@id/feedbackFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_privacyPolicyFragment"
+            app:destination="@id/privacyPolicyFragment" />
+        <action
+            android:id="@+id/action_aboutAppFragment_to_termsOfUseFragment"
+            app:destination="@id/termsOfUseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.example.friendlychat.about_app.fragments.FeedbackFragment"
+        android:label="FeedbackFragment"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.example.friendlychat.about_app.fragments.PrivacyPolicyFragment"
+        android:label="PrivacyPolicyFragment"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/termsOfUseFragment"
+        android:name="com.example.friendlychat.about_app.fragments.TermsOfUseFragment"
+        android:label="TermsOfUseFragment"
+        tools:layout="@layout/fragment_terms_of_use"/>
+</navigation>

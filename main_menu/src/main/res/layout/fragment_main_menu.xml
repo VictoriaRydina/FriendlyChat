@@ -2,19 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_menu_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/color_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/main_menu_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="@dimen/dimens_64_dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_menu_toolbar"
         app:srcCompat="@drawable/ic_group_1" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -45,4 +53,47 @@
         app:layout_constraintEnd_toEndOf="@+id/main_menu_sign_in"
         app:layout_constraintStart_toStartOf="@+id/main_menu_sign_in"
         app:layout_constraintTop_toBottomOf="@+id/main_menu_sign_in" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_menu_language_ru"
+        android:layout_width="@dimen/round_button_size"
+        android:layout_height="@dimen/round_button_size"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/language_ru"
+        android:textAllCaps="false"
+        android:textColor="@color/color_primary"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/main_menu_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/main_menu_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_menu_language_en"
+        android:layout_width="@dimen/round_button_size"
+        android:layout_height="@dimen/round_button_size"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:text="@string/language_en"
+        android:textAllCaps="false"
+        android:textColor="@color/color_primary"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu_toolbar"
+        app:layout_constraintStart_toEndOf="@+id/main_menu_language_ru"
+        app:layout_constraintTop_toTopOf="@+id/main_menu_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_menu_info"
+        android:layout_width="@dimen/round_button_size"
+        android:layout_height="@dimen/round_button_size"
+        android:layout_marginEnd="@dimen/dimens_16_dp"
+        android:background="@drawable/ic_info"
+        app:layout_constraintBottom_toBottomOf="@+id/main_menu_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/main_menu_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/main_menu_toolbar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.friendlychat.di.component
 
 import android.content.Context
+import androidx.lifecycle.ViewModelProvider
 import com.example.friendlychat.presentation.MainActivity
 import com.example.friendlychat.core_ui.di.ApplicationScope
 import com.example.friendlychat.di.module.AppModule
@@ -21,6 +22,8 @@ interface AppComponent {
 
         fun create(@BindsInstance appContext: Context): AppComponent
     }
+
+    fun viewModelFactory(): ViewModelProvider.Factory
 
     fun inject(mainActivity: MainActivity)
 }

@@ -10,6 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/about_app" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core_ui" />
             <option value="$PROJECT_DIR$/main_menu" />

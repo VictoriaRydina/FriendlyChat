@@ -9,7 +9,10 @@
     <dimen name="dimens_16_dp">16dp</dimen>
     <dimen name="dimens_20_dp">20dp</dimen>
     <dimen name="dimens_24_dp">24dp</dimen>
+    <dimen name="dimens_32_dp">32dp</dimen>
     <dimen name="dimens_42_dp">42dp</dimen>
+    <dimen name="dimens_48_dp">48dp</dimen>
+    <dimen name="dimens_56_dp">56dp</dimen>
     <dimen name="dimens_64_dp">64dp</dimen>
 
     <dimen name="toolbar_height">56dp</dimen>
@@ -19,6 +22,9 @@
 
     <dimen name="button_corner_radius">30dp</dimen>
     <dimen name="button_height">60dp</dimen>
+    <dimen name="image_about_app_height">100dp</dimen>
+    <dimen name="image_about_app_width">100dp</dimen>
+    <dimen name="round_button_size">32dp</dimen>
 
     <!--text size-->
     <dimen name="large_text_size">20sp</dimen>

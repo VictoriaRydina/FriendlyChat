@@ -3,4 +3,6 @@
     <string name="sign_in">Войти</string>
     <string name="sign_up">Зарегистрироваться</string>
     <string name="navigate_to_sign_in" translatable="false">Navigate to SignIn</string>
+    <string name="language_ru" translatable="false">Ru</string>
+    <string name="language_en" translatable="false">En</string>
 </resources>
