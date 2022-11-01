@@ -54,7 +54,7 @@ class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>(
             val userPassword = registrationPassword.text.toString()
 
             if (userName.isEmpty() || userEmail.isEmpty() || userPassword.isEmpty()) {
-                showToast(R.string.fill_in_all_the_fields)
+                showToast(com.example.friendlychat.core_ui.R.string.fill_in_all_the_fields)
             } else {
                 auth.createUserWithEmailAndPassword(userEmail, userPassword)
                     .addOnCompleteListener {

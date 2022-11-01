@@ -23,7 +23,7 @@ class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
         super.setUi()
         with(binding){
             mainMenuSignIn.setOnClickListener {
-                showToast(R.string.navigate_to_sign_in)
+                navigateTo(InternalDeepLink.SIGN_IN)
             }
             mainMenuSignUp.setOnClickListener {
                 navigateTo(InternalDeepLink.REGISTRATION)

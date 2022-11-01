@@ -80,6 +80,7 @@ ext {
         about_app   : ":about_app",
         core_ui     : ":core_ui",
         main_menu   : ":main_menu",
-        registration: ":registration"
+        registration: ":registration",
+        sign_in: ":sign_in"
     ]
 }

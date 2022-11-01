@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_email">E-mail</string>
+    <string name="enter_your_password">Password</string>
+    <string name="fill_in_all_the_fields">Fill in all the fields</string>
     <string name="message">Message</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
