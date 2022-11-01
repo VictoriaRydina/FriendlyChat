@@ -21,6 +21,7 @@ ext {
         navigation            : '2.4.2',
         okHttp                : '4.9.0',
         picasso               : '2.71828',
+        playServices          : '20.3.0',
         retrofit              : '2.9.0',
     ]
 
@@ -49,7 +50,8 @@ ext {
         daggerSupport  : "com.google.dagger:dagger-android-support:${versions.dagger}",
         daggerCompiler : "com.google.dagger:dagger-compiler:${versions.dagger}",
         daggerProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
-        material       : "com.google.android.material:material:${versions.material}"
+        material       : "com.google.android.material:material:${versions.material}",
+        playServices   : "com.google.android.gms:play-services-auth:${versions.playServices}"
     ]
 
     jetbrains = [
@@ -75,8 +77,9 @@ ext {
     ]
 
     module = [
-        about_app: ":about_app",
-        core_ui  : ":core_ui",
-        main_menu: ":main_menu"
+        about_app   : ":about_app",
+        core_ui     : ":core_ui",
+        main_menu   : ":main_menu",
+        registration: ":registration"
     ]
 }

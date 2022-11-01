@@ -1,7 +1,7 @@
 package com.example.friendlychat.about_app.di
 
-import com.example.friendlychat.about_app.fragments.AboutAppFragment
-import com.example.friendlychat.about_app.fragments.FeedbackFragment
+import com.example.friendlychat.about_app.presentation.fragments.AboutAppFragment
+import com.example.friendlychat.about_app.presentation.fragments.FeedbackFragment
 import com.example.friendlychat.core_ui.di.ModuleScope
 import dagger.Component
 

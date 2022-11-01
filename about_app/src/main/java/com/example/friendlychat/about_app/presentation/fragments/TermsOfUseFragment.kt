@@ -1,4 +1,4 @@
-package com.example.friendlychat.about_app.fragments
+package com.example.friendlychat.about_app.presentation.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

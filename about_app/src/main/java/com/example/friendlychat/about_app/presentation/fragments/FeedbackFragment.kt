@@ -1,4 +1,4 @@
-package com.example.friendlychat.about_app.fragments
+package com.example.friendlychat.about_app.presentation.fragments
 
 import android.content.Intent
 import android.net.Uri
@@ -9,9 +9,9 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
-import com.example.friendlychat.about_app.AboutAppViewModel
+import com.example.friendlychat.about_app.presentation.viewmodel.AboutAppViewModel
 import com.example.friendlychat.about_app.R
-import com.example.friendlychat.about_app.ViewState
+import com.example.friendlychat.about_app.presentation.viewmodel.ViewState
 import com.example.friendlychat.about_app.databinding.FragmentFeedbackBinding
 import com.example.friendlychat.about_app.di.AboutAppDeps
 import com.example.friendlychat.about_app.di.DaggerAboutAppComponent

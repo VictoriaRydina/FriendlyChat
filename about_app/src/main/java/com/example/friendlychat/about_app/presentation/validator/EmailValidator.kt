@@ -1,7 +1,9 @@
-package com.example.friendlychat.about_app
+package com.example.friendlychat.about_app.presentation.validator
 
 import android.text.Editable
 import androidx.core.util.PatternsCompat
+import com.example.friendlychat.about_app.presentation.exception.InvalidEmailException
+import com.example.friendlychat.about_app.presentation.exception.InvalidMessageException
 import javax.inject.Inject
 
 class EmailValidator

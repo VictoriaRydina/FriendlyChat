@@ -2,4 +2,5 @@
 <resources>
     <string name="info_about_app_deepLink" translatable="false">"friendly-chat://about_app"</string>
     <string name="main_menu_screen_deepLink" translatable="false">"friendly-chat://main_menu"</string>
+    <string name="registration_deepLink" translatable="false">"friendly-chat://registration"</string>
 </resources>

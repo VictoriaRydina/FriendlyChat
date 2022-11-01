@@ -13,6 +13,7 @@
         android:label="MainMenuFragment"
         tools:layout="@layout/fragment_main_menu" />
 
-    <include app:graph="@navigation/navigation_main_menu" />
     <include app:graph="@navigation/navigation_about_app" />
+    <include app:graph="@navigation/navigation_main_menu" />
+    <include app:graph="@navigation/navigation_registration" />
 </navigation>

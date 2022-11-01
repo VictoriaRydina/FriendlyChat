@@ -1,4 +1,4 @@
-package com.example.friendlychat.about_app
+package com.example.friendlychat.about_app.presentation.viewmodel
 
 sealed class ViewState {
     data class ReportCreatedState(val data: String) : ViewState()

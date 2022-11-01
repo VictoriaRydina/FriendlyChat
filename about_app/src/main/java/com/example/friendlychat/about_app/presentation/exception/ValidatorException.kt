@@ -1,6 +1,7 @@
-package com.example.friendlychat.about_app
+package com.example.friendlychat.about_app.presentation.exception
 
 import androidx.annotation.StringRes
+import com.example.friendlychat.about_app.R
 
 sealed class ValidatorException: Throwable()
 

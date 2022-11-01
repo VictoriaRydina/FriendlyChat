@@ -15,12 +15,14 @@
     <dimen name="dimens_56_dp">56dp</dimen>
     <dimen name="dimens_64_dp">64dp</dimen>
 
-    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
     <dimen name="toolbar_elevation">4dp</dimen>
 
     <dimen name="vertical_margin">4dp</dimen>
 
     <dimen name="button_corner_radius">30dp</dimen>
+    <dimen name="corners_toolbar">30dp</dimen>
+
     <dimen name="button_height">60dp</dimen>
     <dimen name="image_about_app_height">100dp</dimen>
     <dimen name="image_about_app_width">100dp</dimen>

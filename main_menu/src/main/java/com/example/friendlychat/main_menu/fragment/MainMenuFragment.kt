@@ -13,6 +13,12 @@ class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
     FragmentMainMenuBinding::inflate
 ) {
 
+    override fun initComponent() {
+        DaggerMainMenuComponent.factory()
+            .create(requireActivity().application as MainDeps)
+            .inject(this)
+    }
+
     override fun setUi() {
         super.setUi()
         with(binding){
@@ -20,7 +26,7 @@ class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
                 showToast(R.string.navigate_to_sign_in)
             }
             mainMenuSignUp.setOnClickListener {
-                showToast("Navigate to SignUp")
+                navigateTo(InternalDeepLink.REGISTRATION)
             }
             mainMenuInfo.setOnClickListener {
                 navigateTo(InternalDeepLink.INFO_ABOUT_APP)
@@ -32,11 +38,5 @@ class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
                 showToast("Change language to English")
             }
         }
-    }
-
-    override fun initComponent() {
-        DaggerMainMenuComponent.factory()
-            .create(requireActivity().application as MainDeps)
-            .inject(this)
     }
 }

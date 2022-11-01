@@ -1,6 +1,10 @@
-package com.example.friendlychat.about_app
+package com.example.friendlychat.about_app.presentation.viewmodel
 
 import android.text.Editable
+import com.example.friendlychat.about_app.*
+import com.example.friendlychat.about_app.presentation.exception.InvalidEmailException
+import com.example.friendlychat.about_app.presentation.exception.InvalidMessageException
+import com.example.friendlychat.about_app.presentation.validator.EmailValidator
 import com.example.friendlychat.core_ui.presentation.viewmodel.BaseViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -22,11 +26,12 @@ class AboutAppViewModel
         try {
             emailValidator.isEmailValid(userEmail)
             emailValidator.isMessageValid(message)
-            _state.value = ViewState.ReportCreatedState(createReport(
-                userEmail = userEmail.toString(),
-                message = message.toString(),
-                note = note
-            )
+            _state.value = ViewState.ReportCreatedState(
+                createReport(
+                    userEmail = userEmail.toString(),
+                    message = message.toString(),
+                    note = note
+                )
             )
         } catch (exception: InvalidEmailException) {
             _state.value = ViewState.ErrorState(exception.textResId)

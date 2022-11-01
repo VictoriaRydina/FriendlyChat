@@ -5,5 +5,6 @@ import com.example.friendlychat.core_ui.R
 
 enum class InternalDeepLink(@StringRes val resId: Int) {
     INFO_ABOUT_APP(R.string.info_about_app_deepLink),
-    MAIN_MENU(R.string.main_menu_screen_deepLink)
+    MAIN_MENU(R.string.main_menu_screen_deepLink),
+    REGISTRATION(R.string.registration_deepLink)
 }

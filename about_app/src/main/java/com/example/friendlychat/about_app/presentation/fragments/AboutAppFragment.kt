@@ -1,4 +1,4 @@
-package com.example.friendlychat.about_app.fragments
+package com.example.friendlychat.about_app.presentation.fragments
 
 import androidx.navigation.fragment.findNavController
 import com.example.friendlychat.about_app.R
