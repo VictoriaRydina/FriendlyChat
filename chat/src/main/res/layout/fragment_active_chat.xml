@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/active_chat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/color_primary"
+        android:elevation="@dimen/toolbar_elevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/active_chat_back_button"
+        android:layout_width="@dimen/dimens_32_dp"
+        android:layout_height="@dimen/dimens_32_dp"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:elevation="@dimen/dimens_4_dp"
+        app:layout_constraintBottom_toBottomOf="@+id/active_chat_toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/active_chat_toolbar"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/active_user_image"
+        android:layout_width="@dimen/dimens_32_dp"
+        android:layout_height="@dimen/dimens_32_dp"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:elevation="@dimen/dimens_4_dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/active_chat_toolbar"
+        app:layout_constraintStart_toEndOf="@+id/active_chat_back_button"
+        app:layout_constraintTop_toTopOf="@+id/active_chat_toolbar"
+        app:srcCompat="@drawable/ic_person" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/active_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimens_8_dp"
+        android:elevation="@dimen/dimens_4_dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/active_chat_toolbar"
+        app:layout_constraintStart_toEndOf="@+id/active_user_image"
+        app:layout_constraintTop_toTopOf="@+id/active_chat_toolbar"
+        tools:text="Person Name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimens_8_dp"
+        android:layout_marginBottom="@dimen/dimens_16_dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_chat_toolbar" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_message"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dimens_16_dp"
+        android:layout_marginEnd="@dimen/dimens_8_dp"
+        android:layout_marginBottom="@dimen/dimens_16_dp"
+        android:ems="10"
+        android:hint="@string/message"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send_message_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/send_message_button" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send_message_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimens_16_dp"
+        android:layout_marginBottom="@dimen/dimens_16_dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:minWidth="@dimen/dimens_32_dp"
+        android:minHeight="@dimen/dimens_32_dp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_send_message"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

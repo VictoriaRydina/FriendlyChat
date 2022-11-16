@@ -12,5 +12,16 @@
         android:label="ChatFragment"
         tools:layout="@layout/fragment_chat">
         <deepLink app:uri="@string/chat_deepLink" />
+        <action
+            android:id="@+id/action_chatFragment_to_activeChatFragment"
+            app:destination="@id/activeChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activeChatFragment"
+        android:name="com.example.friendlychat.chat.presentation.ActiveChatFragment"
+        android:label="ActiveChatFragment"
+        tools:layout="@layout/fragment_active_chat">
+    <argument android:name="userId"
+        app:argType="com.example.friendlychat.core_ui.presentation.model.User" />
     </fragment>
 </navigation>

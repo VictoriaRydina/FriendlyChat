@@ -2,6 +2,7 @@ package com.example.friendlychat.chat.presentation
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.os.bundleOf
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.friendlychat.chat.R
 import com.example.friendlychat.chat.databinding.FragmentChatBinding
@@ -22,7 +23,6 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
 ) {
 
     private var contactList = ArrayList<User>()
-    private var contactUserAdapter = setUpContactUserAdapter()
 
     override fun initComponent() {
         DaggerChatComponent.factory()
@@ -35,12 +35,6 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
         getContactsList()
         binding.userImage.setOnClickListener {
             navigateTo(InternalDeepLink.PERSONAL_AREA)
-        }
-    }
-
-    private fun setUpContactUserAdapter(): ContactUserAdapter {
-        return ContactUserAdapter {
-            showToast("Navigate to this chat")
         }
     }
 
@@ -57,6 +51,15 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
                     if (!contact!!.uid.equals(firebaseUser.uid)) {
                         contactList.add(contact)
                     }
+                    fun setUpContactUserAdapter(): ContactUserAdapter {
+                        return ContactUserAdapter {
+                            navigateTo(
+                                R.id.action_chatFragment_to_activeChatFragment,
+                                bundleOf(USER_ID to contact.uid)
+                            )
+                        }
+                    }
+                    val contactUserAdapter = setUpContactUserAdapter()
                     with(binding) {
                         usersListRecycler.layoutManager =
                             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
@@ -70,5 +73,9 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
                 showToast(error.message)
             }
         })
+    }
+
+    companion object {
+        const val USER_ID = "userId"
     }
 }
