@@ -4,8 +4,10 @@
     <string name="enter_your_email">Введите E-mail</string>
     <string name="enter_your_password">Введите пароль</string>
     <string name="fill_in_all_the_fields">Заполните все поля</string>
+    <string name="friendly_chat" translatable="false">Friendly Chat</string>
     <string name="message">Сообщение</string>
     <string name="sign_in">Войти</string>
     <string name="sign_up">Зарегистрироваться</string>
     <string name="navigate_to_sign_in" translatable="false">Navigate to SignIn</string>
+    <string name="personal_area">Личный кабинет</string>
 </resources>

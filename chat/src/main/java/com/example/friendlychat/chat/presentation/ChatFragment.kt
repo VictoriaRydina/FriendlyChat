@@ -8,8 +8,9 @@ import com.example.friendlychat.chat.databinding.FragmentChatBinding
 import com.example.friendlychat.chat.di.component.DaggerChatComponent
 import com.example.friendlychat.chat.di.deps.ChatDeps
 import com.example.friendlychat.chat.presentation.adapter.ContactUserAdapter
-import com.example.friendlychat.chat.presentation.model.User
+import com.example.friendlychat.core_ui.navigation.InternalDeepLink
 import com.example.friendlychat.core_ui.presentation.fragment.BaseFragment
+import com.example.friendlychat.core_ui.presentation.model.User
 import com.example.friendlychat.core_ui.utils.showToast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -19,9 +20,6 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
     R.layout.fragment_chat,
     FragmentChatBinding::inflate
 ) {
-
-    private var firebaseUser: FirebaseUser? = null
-    private var referenceUsers: DatabaseReference? = null
 
     private var contactList = ArrayList<User>()
     private var contactUserAdapter = setUpContactUserAdapter()
@@ -35,6 +33,9 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         getContactsList()
+        binding.userImage.setOnClickListener {
+            navigateTo(InternalDeepLink.PERSONAL_AREA)
+        }
     }
 
     private fun setUpContactUserAdapter(): ContactUserAdapter {
@@ -44,18 +45,16 @@ class ChatFragment : BaseFragment<FragmentChatBinding>(
     }
 
     private fun getContactsList() {
-        firebaseUser = FirebaseAuth.getInstance().currentUser
-        referenceUsers = FirebaseDatabase.getInstance().getReference("Users")
+        val firebaseUser: FirebaseUser = FirebaseAuth.getInstance().currentUser!!
+        val referenceUsers = FirebaseDatabase.getInstance().getReference("Users")
 
-        referenceUsers?.addValueEventListener(object : ValueEventListener {
+        referenceUsers.addValueEventListener(object : ValueEventListener {
 
             override fun onDataChange(snapshot: DataSnapshot) {
                 contactList.clear()
-
                 for (dataSnapshot: DataSnapshot in snapshot.children) {
                     val contact = dataSnapshot.getValue(User::class.java)
-
-                    if (contact!!.uid == firebaseUser?.uid) {
+                    if (!contact!!.uid.equals(firebaseUser.uid)) {
                         contactList.add(contact)
                     }
                     with(binding) {

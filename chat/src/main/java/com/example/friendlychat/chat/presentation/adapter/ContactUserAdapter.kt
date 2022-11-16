@@ -5,8 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.friendlychat.chat.databinding.ItemChatWithContactBinding
-import com.example.friendlychat.chat.presentation.model.User
 import com.example.friendlychat.core_ui.presentation.adapter.BaseItemCallback
+import com.example.friendlychat.core_ui.presentation.model.User
 import com.squareup.picasso.Picasso
 
 class ContactUserAdapter(private val onItemClickListener: (User) -> Unit) :

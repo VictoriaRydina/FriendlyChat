@@ -7,6 +7,8 @@ import com.example.friendlychat.main_menu.R
 import com.example.friendlychat.main_menu.databinding.FragmentMainMenuBinding
 import com.example.friendlychat.main_menu.di.component.DaggerMainMenuComponent
 import com.example.friendlychat.main_menu.di.deps.MainDeps
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
     R.layout.fragment_main_menu,
@@ -18,6 +20,9 @@ class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
             .create(requireActivity().application as MainDeps)
             .inject(this)
     }
+
+    private lateinit var auth: FirebaseAuth
+    private var firebaseUser: FirebaseUser? = null
 
     override fun setUi() {
         super.setUi()
@@ -37,6 +42,11 @@ class MainMenuFragment: BaseFragment<FragmentMainMenuBinding>(
             mainMenuLanguageEn.setOnClickListener {
                 showToast("Change language to English")
             }
+        }
+        auth = FirebaseAuth.getInstance()
+        firebaseUser = auth.currentUser
+        if (firebaseUser != null){
+            navigateTo(InternalDeepLink.CHAT)
         }
     }
 }

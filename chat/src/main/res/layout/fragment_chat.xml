@@ -21,12 +21,13 @@
         android:layout_height="@dimen/dimens_32_dp"
         android:layout_marginStart="@dimen/dimens_16_dp"
         android:src="@drawable/ic_person"
+        android:elevation="@dimen/dimens_12_dp"
         app:layout_constraintBottom_toBottomOf="@+id/chat_toolbar"
         app:layout_constraintStart_toStartOf="@+id/chat_toolbar"
         app:layout_constraintTop_toTopOf="@+id/chat_toolbar" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/user_name_title"
+        android:id="@+id/chat_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimens_16_dp"
@@ -36,7 +37,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/chat_toolbar"
         app:layout_constraintStart_toEndOf="@+id/user_image"
         app:layout_constraintTop_toTopOf="@+id/chat_toolbar"
-        tools:text="Профиль" />
+        android:text="@string/friendly_chat" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/search"

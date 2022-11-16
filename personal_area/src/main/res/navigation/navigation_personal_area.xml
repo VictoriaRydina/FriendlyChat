@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_personal_area"
+    app:startDestination="@id/personalAreaFragment">
+
+    <fragment
+        android:id="@+id/personalAreaFragment"
+        android:name="com.example.friendlychat.personal_area.presentation.fragment.PersonalAreaFragment"
+        android:label="PersonalAreaFragment"
+        tools:layout="@layout/fragment_personal_area">
+    <deepLink app:uri="@string/personal_area_screen_deepLink" />
+    </fragment>
+</navigation>
