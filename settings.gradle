@@ -15,6 +15,7 @@ dependencyResolutionManagement {
 rootProject.name = "Friendly Chat"
 include ':about_app'
 include ':app'
+include ':chat'
 include ':core_ui'
 include ':main_menu'
 include ':registration'

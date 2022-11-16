@@ -78,9 +78,10 @@ ext {
 
     module = [
         about_app   : ":about_app",
+        chat        : ":chat",
         core_ui     : ":core_ui",
         main_menu   : ":main_menu",
         registration: ":registration",
-        sign_in: ":sign_in"
+        sign_in     : ":sign_in"
     ]
 }

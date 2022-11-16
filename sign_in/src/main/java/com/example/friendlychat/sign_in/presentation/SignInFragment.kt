@@ -3,6 +3,7 @@ package com.example.friendlychat.sign_in.presentation
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.findNavController
+import com.example.friendlychat.core_ui.navigation.InternalDeepLink
 import com.example.friendlychat.core_ui.presentation.fragment.BaseFragment
 import com.example.friendlychat.core_ui.utils.showToast
 import com.example.friendlychat.sign_in.R
@@ -49,7 +50,7 @@ class SignInFragment : BaseFragment<FragmentSignInBinding>(
                 auth.signInWithEmailAndPassword(userEmail, userPassword)
                     .addOnCompleteListener {
                         if (it.isSuccessful) {
-                            showToast("Navigate to chat")
+                            navigateTo(InternalDeepLink.CHAT)
                         } else {
                             showToast("Error: " + it.exception?.message.toString())
                         }

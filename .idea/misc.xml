@@ -15,10 +15,15 @@
         <entry key="app/src/main/res/drawable/ic_icon_friendly_chat.xml" value="0.127" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
         <entry key="app/src/main/res/layout/fragment_main_menu.xml" value="0.16598052978515626" />
+        <entry key="chat/src/main/res/drawable/ic_edit.xml" value="0.1325" />
+        <entry key="chat/src/main/res/layout/fragment_chat.xml" value="0.17256011962890624" />
+        <entry key="chat/src/main/res/layout/item_chat_with_contact.xml" value="0.2708206176757812" />
+        <entry key="core_ui/src/main/res/drawable/background_edit_text.xml" value="0.1325" />
         <entry key="core_ui/src/main/res/drawable/background_toolba.xml" value="0.1325" />
         <entry key="core_ui/src/main/res/drawable/background_toolbar.xml" value="0.1325" />
         <entry key="core_ui/src/main/res/drawable/bg_button_disabled.xml" value="0.1" />
         <entry key="core_ui/src/main/res/drawable/button_state_background.xml" value="0.127" />
+        <entry key="core_ui/src/main/res/drawable/ic_person.xml" value="0.1325" />
         <entry key="main_menu/src/main/res/drawable/background_language_button.xml" value="0.1325" />
         <entry key="main_menu/src/main/res/drawable/ic_info.xml" value="0.127" />
         <entry key="main_menu/src/main/res/layout/fragment_about_app.xml" value="0.24402003223540003" />

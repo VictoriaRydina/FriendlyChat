@@ -3,6 +3,7 @@ package com.example.friendlychat.registration.presentation
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.findNavController
+import com.example.friendlychat.core_ui.navigation.InternalDeepLink
 import com.example.friendlychat.core_ui.presentation.fragment.BaseFragment
 import com.example.friendlychat.core_ui.utils.showToast
 import com.example.friendlychat.registration.R
@@ -74,7 +75,7 @@ class RegistrationFragment : BaseFragment<FragmentRegistrationBinding>(
                             referenceUsers.updateChildren(userHashMap)
                                 .addOnCompleteListener { task ->
                                     if (task.isSuccessful) {
-                                        showToast("Navigate to chat")
+                                        navigateTo(InternalDeepLink.CHAT)
                                     }
                                 }
                         } else {
